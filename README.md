@@ -1,4 +1,4 @@
-# Forecast Norway Fishery Production using Time Series
+# Forecast Norway Fishery Production using Time Series Techniques
 
 ## Problem Statement
 
