@@ -48,7 +48,7 @@ The data used for forecasting in this study was taken from **2000** to **2023** 
 
 ## Result
 
-<img width="531" alt="image" src="https://github.com/ngochien1007/forecast-fish-production-using-time-series/assets/154615929/e3bad677-4a4c-46c9-9e1a-f4ca7e23d04f">
+![Results](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/c3386674-d297-4d32-a236-a04facb64b40)
 
 ## Conclusion
 
