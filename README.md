@@ -35,7 +35,14 @@ The data used for forecasting in this study was taken from **2000** to **2023** 
 
 ## Method
 
+
+
+![Pipeline](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/a7c494c4-7863-4dac-850f-229c1ff4c28c)
+
+
 #### Data Collection and Preprocessing
+
+
 
 #### Data Preparation
 
