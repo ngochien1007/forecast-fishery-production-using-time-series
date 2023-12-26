@@ -27,23 +27,32 @@ Forecasting fishery production of three species: Northeast Arctic cod, Northeast
 
 ## Dataset
 
-The datasets used in this research project were extracted from a comprehensive log of fishing activity provided by the Norwegian Directorate of Fisheries. It contains information on offshore fishing trips by Norwegian fishing vessels since 2000 in the Norwegian Sea of the North Atlantic. The data is updated daily and includes information on fishing time, location, gear used, and catch quantity for each species of marine life.
-
 The data used for forecasting in this study was taken from **2000** to **2023** on the catch of three common fish species in the region: **Northeast Arctic cod**, **Northeast Arctic haddock**, and **Atlantic halibut**. These species were chosen because they are common, have good data coverage, and are economically important. The development of forecasting models for these species will be valuable for fishermen.
+
 
 - Source: [here](https://www.fiskeridir.no/Tall-og-analyse/AApne-data/Fangstdata-seddel-koblet-med-fartoeydata)
 
 ## Method
 
 
-
-![Pipeline](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/a7c494c4-7863-4dac-850f-229c1ff4c28c)
+![pipeline](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/ff2738e4-a877-4c50-8faa-b8e5dba239a2)
 
 
 #### Data Collection and Preprocessing
 
+The dataset has 133 attributes containing important data, however, after identifying appropriate species, we selected **4 attributes** that meet the requirements of our Problem Statement:
 
+- **Last Catch Date**
+- Gross Weight
+- Round Weight
+- **Product Weight**
 
+Since a fish species can be caught multiple times in a day by different boats, the group approached the problem by grouping and calculating **the daily total production**. To facilitate calculation and presentation in the report, the value of the production was converted **from kilograms (kg) to tons**.
+
+After that, the missing data points are processed using **linear interpolation** to minimize unwanted effects on the shape of the time series.
+
+**Result**: Each specie has **a Dataframe of 8568 rows** containing complete information about the fishing time and production on a daily basis.
+  
 #### Data Preparation
 
 #### Experimental Setup
