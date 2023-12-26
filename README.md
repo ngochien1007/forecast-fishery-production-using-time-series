@@ -5,9 +5,9 @@
 ## Memebers
 | Full Name | Email | Github|Role| 
 |--------------|-------|------|------|
-| Thai Minh Triet | 19522397@gm.uit.edu.vn | https://github.com/triet2397 |Leader | 
+| Thai Minh Triet | 19522397@gm.uit.edu.vn |https://github.com/triet2397 |Leader | 
 | Nguyen Ngoc Hien | 20520496@gm.uit.edu.vn |https://github.com/ngochien1007 |Member | 
-| Nguyen To Duc Tai | 20520743@gm.uit.edu.vn | |Member | 
+| Nguyen To Duc Tai | 20520743@gm.uit.edu.vn |https://github.com/DucTai0909|Member | 
 | Nguyen Thi Kim Lien | 20520909@gm.uit.edu.vn | | Member | 
 | Tran Ngoc Linh | 20521538@gm.uit.edu.vn | | Member | 
 
