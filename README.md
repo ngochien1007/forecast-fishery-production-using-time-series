@@ -3,13 +3,13 @@
 *This is a project that my team and I accomplished when studying the subject of **Business Analytics** at UIT. My primary responsibilities are to dive deep into **descriptive statistics** and **2 machine learning algorithms** (ARIMA and RF)*.
 
 ## Memebers
-| Full Name | Email | Role| 
-|--------------|-------|------|
-| Thai Minh Triet | 19522397@gm.uit.edu.vn | Leader | 
-| Nguyen Ngoc Hien | 20520496@gm.uit.edu.vn | Member | 
-| Nguyen To Duc Tai | 20520743@gm.uit.edu.vn | Member | 
-| Nguyen Thi Kim Lien | 20520909@gm.uit.edu.vn | Member | 
-| Tran Ngoc Linh | 20521538@gm.uit.edu.vn | Member | 
+| Full Name | Email | Github|Role| 
+|--------------|-------|------|------|
+| Thai Minh Triet | 19522397@gm.uit.edu.vn | https://github.com/triet2397 |Leader | 
+| Nguyen Ngoc Hien | 20520496@gm.uit.edu.vn |https://github.com/ngochien1007 |Member | 
+| Nguyen To Duc Tai | 20520743@gm.uit.edu.vn | |Member | 
+| Nguyen Thi Kim Lien | 20520909@gm.uit.edu.vn | | Member | 
+| Tran Ngoc Linh | 20521538@gm.uit.edu.vn | | Member | 
 
 ## Problem Statement
 
