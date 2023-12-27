@@ -1,6 +1,8 @@
 # Forecast Norway Fishery Production using Time Series Techniques
 
-*This is a project that my team and I accomplished when studying the subject of **Business Analytics** at UIT. My primary responsibilities are to dive deep into **descriptive statistics** and **2 machine learning algorithms** (ARIMA and RF)*.
+## Preface
+
+This is a project that my team and I accomplished when studying the subject of **Business Analytics** at UIT. My primary responsibilities are to dive deep into **descriptive statistics** and **2 machine learning algorithms** (ARIMA and RF).
 
 ## Memebers
 | Full Name | Email | Github|Role| 
@@ -90,13 +92,13 @@ The following metrics are used to evaluate models:
 
 ## Result
 
-In general, deep learning models show superior performance over traditional machine learning-based time series forecasting models. Besides Linear Regression, the standard ARIMA model shows the lowest experimental performance in all 5 metrics due to its seasonal features, so the forecast line is only a straight one. Based on RMSE, the forecasts of the models using a 7:1:2 ratio for the experiment usually show better performance than when using a 6:2:1 ratio.
+In general, **deep learning models** show superior performance over traditional machine learning-based time series forecasting models. Besides Linear Regression, the standard ARIMA model shows the lowest experimental performance in all 5 metrics due to its seasonal features, so the forecast line is only a straight one. Based on RMSE, the forecasts of the models using **a 7:1:2 ratio** for the experiment usually show better performance than when using a 6:2:1 ratio.
 
 ![Results](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/c3386674-d297-4d32-a236-a04facb64b40)
 
 ## Conclusion
 
-After identifying the two best models for each experimental ratio for each marine species, we applied them to forecast the production of these species in the next 30 days from June 17, 2023, and visualize the forecast results in the form of a graph, containing information about the production in the most recent 90 days for the last 30-day forecast, the results of the last 30-day forecast and actual values, and finally, the results of the next 30-day forecast in the future.
+After identifying the two best models for each experimental ratio for each marine species, we applied them to forecast the production of these species in **the next 30 days from June 17 2023**, and visualize the forecast results in the form of a graph, containing information about the production in the most recent 90 days for the last 30-day forecast, the results of the last 30-day forecast and actual values, and finally, the results of the next 30-day forecast in the future.
 
 - **Northeast Arctic cod**
   - GRU, Random Forest (7:1:2 and 6:2:2)
@@ -107,4 +109,7 @@ After identifying the two best models for each experimental ratio for each marin
   - GRU, ETS (7:1:2)
   - TCN, ETS (6:2:2) 
 
+## Acknowledgement
+
+I would like to express my sincere gratitude to my leader, **Triet**, for his guidance, support and feedback through the tough semester. Also, I would like to thank my teammates, **Tai**, **Lien**, and **Linh** for their helpful discussions and compainionship.
 
