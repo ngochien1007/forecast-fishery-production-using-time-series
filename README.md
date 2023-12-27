@@ -80,15 +80,31 @@ In terms of Deep Learning models, these are trained with batch size 64 for 5 epo
 
 ### Evaluation
 
+The following metrics are used to evaluate models:
 
+- MSE
+- RMSE
+- MAE
+- MAPE
+- R2
 
 ## Result
+
+In general, deep learning models show superior performance over traditional machine learning-based time series forecasting models. Besides Linear Regression, the standard ARIMA model shows the lowest experimental performance in all 5 metrics due to its seasonal features, so the forecast line is only a straight one. Based on RMSE, the forecasts of the models using a 7:1:2 ratio for the experiment usually show better performance than when using a 6:2:1 ratio.
 
 ![Results](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/c3386674-d297-4d32-a236-a04facb64b40)
 
 ## Conclusion
 
+After identifying the two best models for each experimental ratio for each marine species, we applied them to forecast the production of these species in the next 30 days from June 17, 2023, and visualize the forecast results in the form of a graph, containing information about the production in the most recent 90 days for the last 30-day forecast, the results of the last 30-day forecast and actual values, and finally, the results of the next 30-day forecast in the future.
 
+- **Northeast Arctic cod**
+  - GRU, Random Forest (7:1:2 and 6:2:2)
+- **Northeast Arctic haddock**
+  - RNN, LSTM (7:1:2)
+  - GRU, Seq2Seq (6:2:2) 
+- **Atlantic halibut**
+  - GRU, ETS (7:1:2)
+  - TCN, ETS (6:2:2) 
 
-  
 
