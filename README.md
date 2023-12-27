@@ -38,7 +38,7 @@ The data used for forecasting in this study was taken from **2000** to **2023** 
 ![pipeline](https://github.com/ngochien1007/forecast-fishery-production-using-time-series/assets/154615929/ff2738e4-a877-4c50-8faa-b8e5dba239a2)
 
 
-#### Data Collection and Preprocessing
+### Data Collection and Preprocessing
 
 The dataset has 133 attributes containing important data, however, after identifying appropriate species, we selected **4 attributes** that meet the requirements of our Problem Statement:
 
@@ -53,13 +53,33 @@ After that, the missing data points are processed using **linear interpolation**
 
 **Result**: Each specie has **a Dataframe of 8568 rows** containing complete information about the fishing time and production on a daily basis.
   
-#### Data Preparation
+### Data Preparation
 
-#### Experimental Setup
+The dataset was divided into three subsets: train, validation, and test with 2 ratio **(7:1:2 and 6:2:2)**. Interestingly, regardless of the ratio used, the **test set** covered the period **from October 7 2018 to June 16 2023**. 
 
-#### Model Development
+To improve the performance of our experiments and optimize computational costs, we normalized the data to have **a mean of 0** and **a standard deviation of 1**. 
 
-#### Evaluation
+Moreover, we modeled the problem as **an autoregressive model** to forecast multiple days in the future, where past values are used to train the model and predict production. In this study, for each ratio and each type of seafood, we **used the production values from the most recent 90 days to predict the next 30 days**.
+
+### Experimental Setup
+
+The data preparation approach presented in the previous section was used in most experimental processes of time series forecasting models, except for LR, ETS, and ARIMA. For Machine Learning models, we set and fine-tuned the model parameters to achieve the best performance on the validation set.
+
+In terms of Deep Learning models, these are trained with batch size 64 for 5 epochs using Adam optimizer and MSE loss function. RNN, LSTM, and GRU models had 2 layers of 32 neurons and used tanh activation function. Sequence-to-Sequence model had 2 LSTM layers of 64 neurons in both encoder and decoder. TCN model had 3x3 kernel size with number of layers and filters tuned in experiment for real data stability.
+
+### Model Development
+
+**Tools**: 
+- Jupyter Notebook
+- Google Colaboratory
+
+**Libraries**: 
+
+- pandas, numpy, matplotlib, sklearn, statsmodels, keras,...: Process data, analyze, and build forecasting models.
+- bigdl, json: Train models and process Big Data.
+
+### Evaluation
+
 
 
 ## Result
