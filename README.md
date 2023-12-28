@@ -13,6 +13,13 @@ This is a project that my team and I accomplished when studying the subject of *
 | Nguyen Thi Kim Lien | 20520909@gm.uit.edu.vn | | Member | 
 | Tran Ngoc Linh | 20521538@gm.uit.edu.vn | | Member | 
 
+## Dataset
+
+The data used for forecasting in this study was taken from **2000** to **2023** on the catch of three common fish species in the region: **Northeast Arctic cod**, **Northeast Arctic haddock**, and **Atlantic halibut**. These species were chosen because they are common, have good data coverage, and are economically important. The development of forecasting models for these species will be valuable for fishermen.
+
+
+- Source: [here](https://www.fiskeridir.no/Tall-og-analyse/AApne-data/Fangstdata-seddel-koblet-med-fartoeydata)
+
 ## Problem Statement
 
 Forecasting fishery production of three species: Northeast Arctic cod, Northeast Arctic haddock, and Atlantic halibut using time series analysis techniques. The project studied and applied **10 algorithms** mentioned below:
@@ -27,12 +34,6 @@ Forecasting fishery production of three species: Northeast Arctic cod, Northeast
 - Sequence-to-Sequence Network (2Seq2)
 - Temporal Convolutional Network (TCN)
 
-## Dataset
-
-The data used for forecasting in this study was taken from **2000** to **2023** on the catch of three common fish species in the region: **Northeast Arctic cod**, **Northeast Arctic haddock**, and **Atlantic halibut**. These species were chosen because they are common, have good data coverage, and are economically important. The development of forecasting models for these species will be valuable for fishermen.
-
-
-- Source: [here](https://www.fiskeridir.no/Tall-og-analyse/AApne-data/Fangstdata-seddel-koblet-med-fartoeydata)
 
 ## Method
 
@@ -67,7 +68,7 @@ Moreover, we modeled the problem as **an autoregressive model** to forecast mult
 
 The data preparation approach presented in the previous section was used in most experimental processes of time series forecasting models, except for LR, ETS, and ARIMA. For Machine Learning models, we set and fine-tuned the model parameters to achieve the best performance on the validation set.
 
-In terms of Deep Learning models, these are trained with batch size 64 for 5 epochs using Adam optimizer and MSE loss function. RNN, LSTM, and GRU models had 2 layers of 32 neurons and used tanh activation function. Sequence-to-Sequence model had 2 LSTM layers of 64 neurons in both encoder and decoder. TCN model had 3x3 kernel size with number of layers and filters tuned in experiment for real data stability.
+In terms of Deep Learning models, these are trained with batch size 64 for 5 epochs using Adam optimizer and MSE loss function. RNN, LSTM, and GRU models had 2 layers of 32 neurons and used tanh activation function. Seq2Seq model had 2 LSTM layers of 64 neurons in both encoder and decoder. TCN model had 3x3 kernel size with number of layers and filters tuned in experiment for real data stability.
 
 ### Model Development
 
